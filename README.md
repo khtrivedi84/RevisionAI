@@ -2,25 +2,27 @@
 
 RevisionAI is a web application that utilizes artificial intelligence (AI) to generate topic-wise summaries and extract important information from uploaded class recordings. With this application, you can easily summarize your recorded lectures, identify key topics, and extract essential details for exams, midterms, assignments, or preparing for future lectures. **(Screen Recording at the bottom)**
 
-### Current Features
+### Functionality
 
-Topic-wise Summaries: The AI-powered analyzes the uploaded class recordings and generates concise summaries for each topic covered in the lecture. These summaries provide a quick overview of the main points discussed, enabling you to review the content more efficiently.
+**Topic-wise Summaries**: The AI-powered analyzes the uploaded class recordings and generates concise summaries for each topic covered in the lecture. These summaries provide a quick overview of the main points discussed, enabling you to review the content more efficiently.
 
-Keyword Extraction: The application extracts relevant keywords for each topic, helping you identify the core concepts and significant terms associated with the lecture content. These keywords can be useful for creating study notes or searching for specific information within the recordings. The keywords are interactive and a more "detailed" or "simple" explanation would be generated in the context of the paragraph that contains the keyword.
+**Keyword Extraction**: The application extracts relevant keywords for each topic, helping you identify the core concepts and significant terms associated with the lecture content. These keywords can be useful for creating study notes or searching for specific information within the recordings. The keywords are interactive and a more "detailed" or "simple" explanation would be generated in the context of the paragraph that contains the keyword.
 
-Importance Indicators: Class Recording Summarizer automatically identifies the importance of each topic for various academic purposes, such as exams, midterms, assignments, or preparing for future lectures. This feature assists you in prioritizing your study or preparation efforts based on the significance of each topic.
+**Importance Indicators**: Class Recording Summarizer automatically identifies the importance of each topic for various academic purposes, such as exams, midterms, assignments, or preparing for future lectures. This feature assists you in prioritizing your study or preparation efforts based on the significance of each topic.
 
-Saves Time and Effort: By automating the process of summarizing class recordings and extracting crucial information, the application saves you valuable time and effort. You can quickly access the most vital details from your lectures, enabling a more focused and efficient approach to studying and review.
+**Saves Time and Effort**: By automating the process of summarizing class recordings and extracting crucial information, the application saves you valuable time and effort. You can quickly access the most vital details from your lectures, enabling a more focused and efficient approach to studying and review.
 
-### Upcoming Features
+### Upcoming integrations
 
-Pinecone vector database, Retrival Search and Retrival Augmentation technique to use class materials such as Slides or reference books as a knowledge base for more accurate summaries and question answering.
+**Pinecone Vector Database**: Leveraging Pinecone, a vector database, the application utilizes vector embeddings to store and retrieve class materials, such as slides or reference books. This knowledge base enhances the accuracy of summaries and enables more comprehensive question answering capabilities.
 
-Integrated ChatGPT to do general question answering
+**Retrieval Search and Retrieval Augmentation**: By employing retrieval search techniques, the application can retrieve relevant information from the integrated knowledge base. Additionally, retrieval augmentation techniques enhance the summaries by incorporating relevant content from the class materials, resulting in more comprehensive and insightful summaries.
 
-Integration of GPT-4 32k model for accurate results and bigger context window
+**Integrated ChatGPT for Question Answering**: The integration of ChatGPT allows the application to handle general question answering tasks. Users can interact with the model to ask specific questions related to the class recordings, further enhancing their understanding and knowledge retention.
 
-LangChain for text splitting and chunk creation
+**GPT-4 32k Model Integration**: Integrating the powerful GPT-4 32k model enhances the summarization process by providing a larger context window for analysis. This enables the model to capture more extensive information and produce more accurate and detailed summaries.
+
+**LangChain for Text Splitting and Chunk Creatio*n**: By utilizing LangChain, the application can effectively split the text into smaller, manageable chunks. This technique enables a more precise analysis of the content, improving the quality of the generated summaries and question answering results.
 
 ## Getting Started
 
