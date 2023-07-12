@@ -4,9 +4,9 @@ RevisionAI is a web application that utilizes artificial intelligence (AI) to ge
 
 ## Features
 
-Topic-wise Summaries: The AI-powered algorithm analyzes the uploaded class recordings and generates concise summaries for each topic covered in the lecture. These summaries provide a quick overview of the main points discussed, enabling you to review the content more efficiently.
+Topic-wise Summaries: The AI-powered analyzes the uploaded class recordings and generates concise summaries for each topic covered in the lecture. These summaries provide a quick overview of the main points discussed, enabling you to review the content more efficiently.
 
-Keyword Extraction: The application extracts relevant keywords for each topic, helping you identify the core concepts and significant terms associated with the lecture content. These keywords can be useful for creating study notes or searching for specific information within the recordings.
+Keyword Extraction: The application extracts relevant keywords for each topic, helping you identify the core concepts and significant terms associated with the lecture content. These keywords can be useful for creating study notes or searching for specific information within the recordings. The keywords are interactive and a more "detailed" or "simple" explanation would be generated in the context of the paragraph that contains the keyword.
 
 Importance Indicators: Class Recording Summarizer automatically identifies the importance of each topic for various academic purposes, such as exams, midterms, assignments, or preparing for future lectures. This feature assists you in prioritizing your study or preparation efforts based on the significance of each topic.
 
