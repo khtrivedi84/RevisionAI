@@ -23,7 +23,14 @@ Clone this repository to your local machine.
 ```bash
   git clone https://github.com/kishan12345/RevisionAI.git
 ```
+Run following commands to install required modules and packages
 
+```bash
+  pip install flask
+  pip install flask_sqlalchemy
+  pip install flask_migrate
+  pip install moviepy
+```
 
 ## Technologies Used
 
