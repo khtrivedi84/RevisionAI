@@ -2,7 +2,7 @@
 
 RevisionAI is a web application that utilizes artificial intelligence (AI) to generate topic-wise summaries and extract important information from uploaded class recordings. With this application, you can easily summarize your recorded lectures, identify key topics, and extract essential details for exams, midterms, assignments, or preparing for future lectures. **(Screen Recording at the bottom)**
 
-### Functionality
+## Features
 
 **Topic-wise Summaries**: The AI-powered analyzes the uploaded class recordings and generates concise summaries for each topic covered in the lecture. These summaries provide a quick overview of the main points discussed, enabling you to review the content more efficiently.
 
@@ -11,18 +11,6 @@ RevisionAI is a web application that utilizes artificial intelligence (AI) to ge
 **Importance Indicators**: Class Recording Summarizer automatically identifies the importance of each topic for various academic purposes, such as exams, midterms, assignments, or preparing for future lectures. This feature assists you in prioritizing your study or preparation efforts based on the significance of each topic.
 
 **Saves Time and Effort**: By automating the process of summarizing class recordings and extracting crucial information, the application saves you valuable time and effort. You can quickly access the most vital details from your lectures, enabling a more focused and efficient approach to studying and review.
-
-### Upcoming integrations
-
-**Pinecone Vector Database**: Leveraging Pinecone, a vector database, the application utilizes vector embeddings to store and retrieve class materials, such as slides or reference books. This knowledge base enhances the accuracy of summaries and enables more comprehensive question answering capabilities.
-
-**Retrieval Search and Retrieval Augmentation**: By employing retrieval search techniques, the application can retrieve relevant information from the integrated knowledge base. Additionally, retrieval augmentation techniques enhance the summaries by incorporating relevant content from the class materials, resulting in more comprehensive and insightful summaries.
-
-**Integrated ChatGPT for Question Answering**: The integration of ChatGPT allows the application to handle general question answering tasks. Users can interact with the model to ask specific questions related to the class recordings, further enhancing their understanding and knowledge retention.
-
-**GPT-4 32k Model Integration**: Integrating the powerful GPT-4 32k model enhances the summarization process by providing a larger context window for analysis. This enables the model to capture more extensive information and produce more accurate and detailed summaries.
-
-**LangChain for Text Splitting and Chunk Creatio*n**: By utilizing LangChain, the application can effectively split the text into smaller, manageable chunks. This technique enables a more precise analysis of the content, improving the quality of the generated summaries and question answering results.
 
 ## Getting Started
 
@@ -57,22 +45,25 @@ Voila! Your app must have started and you can start summarizing your lectures.
 
 ## Technologies Used
 
-**OpenAI Whisper Model**: Used for audio-to-text transcription, converting the class recordings into textual format for further processing.
+**OpenAI Whisper Model and WhisperX**: Used for long audio-to-text transcription enabling the processing of lengthy class recordings.
 
 **AI21 Text Segmentation API**: Utilized for segmenting the transcribed text into topic-wise sections, allowing for focused analysis and summarization.
-
-**WhisperX**: Used for long-audio transcription, enabling the processing of lengthy class recordings while maintaining accuracy and efficiency.
 
 **PyAnnotate**: Employed for speaker diarization, separating speakers' voices within the class recordings, facilitating a more organized analysis and summary generation.
 
 **OpenAI GPT-3.5-turbo-16k**: Leveraged for various natural language processing tasks, including topic summarization, generating topic headings, extracting keywords, and identifying important information. This powerful language model enhances the application's ability to provide comprehensive and informative summaries.
 
-**Python Flask**: Chosen as the web application framework for its simplicity and flexibility. Flask enables efficient development and deployment of the application's backend functionality.
+**Web application**: Flask for back-end, Bootstrap for front-end, and SQLite as database for storing userinfo and lecture summaries.
 
-**HTML, CSS, and JavaScript**: Used for the frontend development, creating an intuitive and user-friendly interface for interacting with the application. These web technologies provide the necessary structure, styling, and interactivity to enhance the user experience.
+## Upcoming features
 
-**Bootstrap**: Employed as a frontend framework to streamline the design and layout process. Bootstrap offers a responsive grid system and a wide range of pre-built components, allowing for faster and consistent development of the application's frontend.
+**Pinecone Vector Database**: Utilize Pinecone, a vector database, to store and retrieve class materials for improved accuracy.
 
-**SQLite**: Selected as the database management system for its lightweight nature and seamless integration with Python. SQLite efficiently stores and retrieves data, supporting the application's functionality related to user accounts, uploaded files, and other relevant information.
+**Retrieval Search and Retrieval Augmentation**: Implement retrieval search techniques to fetch relevant information from the knowledge base, enhancing summaries. Retrieve and incorporate content from class materials to provide comprehensive summaries.
 
+**Integrated ChatGPT for Question Answering**: Seamlessly integrate ChatGPT for general question answering, allowing users to obtain specific information from the class recordings.
+
+**GPT-4 32k Model Integration**: Incorporate the powerful GPT-4 32k model to enable a larger context window for analysis, leading to more accurate and detailed summaries.
+
+**LangChain for Text Splitting and Chunk Creation**: Utilize LangChain to effectively split text into manageable chunks, improving the precision of analysis and generating higher-quality summaries and question answering results.
 
