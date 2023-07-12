@@ -189,7 +189,7 @@ def upload():
         headers["Authorization"] = "Bearer <RUNPOD_API_KEY>"
         headers["Content-Type"] = "application/json"
 
-        data = '{{"input": {{"public_ip": "54.186.104.197", "port": "8000", "course_name": "{0}", "user_email": "{1}", "lecture_number": "{2}", "file_name": "{3}"}}}}'.format(courseName, email, lecture_number, url_filename)
+        data = '{{"input": {{"public_ip": "<YOUR_LINUX_IMAGE_IP>", "port": "<YOUR_PORT>", "course_name": "{0}", "user_email": "{1}", "lecture_number": "{2}", "file_name": "{3}"}}}}'.format(courseName, email, lecture_number, url_filename)
         print(data)
         
         resp = requests.post(url, headers=headers, data=data)
