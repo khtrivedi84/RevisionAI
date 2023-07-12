@@ -41,6 +41,8 @@ Run following command to start the flask server
   flask --app app run
 ```
 
+Voila! Your app must have started and you can start summarizing your lectures.
+
 ## Technologies Used
 
 OpenAI Whisper Model: Used for audio-to-text transcription, converting the class recordings into textual format for further processing.
