@@ -36,6 +36,11 @@ Install Docker and create docker image using the Dockerfile and handler.py file 
 
 Obtain required keys from the OpenAI, RunPod, and AI21 and replace them in the "app.py" file. Also, make sure to update the "public_ip" and "port" with your amazon ec2 instance ip or any other cloud service you might be using.
 
+Run following command to start the flask server
+```bash
+  flask --app app run
+```
+
 ## Technologies Used
 
 OpenAI Whisper Model: Used for audio-to-text transcription, converting the class recordings into textual format for further processing.
