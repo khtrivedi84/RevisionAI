@@ -69,4 +69,4 @@ Voila! Your app must have started and you can start summarizing your lectures.
 
 ## Screen Recording (Demo)
 
-[Video Recording]([video_url](https://youtu.be/Zxm7Bf4VSi0)https://youtu.be/Zxm7Bf4VSi0)
+[Video Recording](https://youtu.be/Zxm7Bf4VSi0)
