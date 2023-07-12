@@ -45,20 +45,20 @@ Voila! Your app must have started and you can start summarizing your lectures.
 
 ## Technologies Used
 
-OpenAI Whisper Model: Used for audio-to-text transcription, converting the class recordings into textual format for further processing.
+**OpenAI Whisper Model**: Used for audio-to-text transcription, converting the class recordings into textual format for further processing.
 
-ai21 Text Segmentation API: Utilized for segmenting the transcribed text into topic-wise sections, allowing for focused analysis and summarization.
+**AI21 Text Segmentation API**: Utilized for segmenting the transcribed text into topic-wise sections, allowing for focused analysis and summarization.
 
-WhisperX: Used for long-audio transcription, enabling the processing of lengthy class recordings while maintaining accuracy and efficiency.
+**WhisperX**: Used for long-audio transcription, enabling the processing of lengthy class recordings while maintaining accuracy and efficiency.
 
-PyAnnotate: Employed for speaker diarization, separating speakers' voices within the class recordings, facilitating a more organized analysis and summary generation.
+**PyAnnotate**: Employed for speaker diarization, separating speakers' voices within the class recordings, facilitating a more organized analysis and summary generation.
 
-OpenAI GPT-3.5-turbo-16k: Leveraged for various natural language processing tasks, including topic summarization, generating topic headings, extracting keywords, and identifying important information. This powerful language model enhances the application's ability to provide comprehensive and informative summaries.
+**OpenAI GPT-3.5-turbo-16k**: Leveraged for various natural language processing tasks, including topic summarization, generating topic headings, extracting keywords, and identifying important information. This powerful language model enhances the application's ability to provide comprehensive and informative summaries.
 
-Python Flask: Chosen as the web application framework for its simplicity and flexibility. Flask enables efficient development and deployment of the application's backend functionality.
+**Python Flask**: Chosen as the web application framework for its simplicity and flexibility. Flask enables efficient development and deployment of the application's backend functionality.
 
-HTML, CSS, and JavaScript: Used for the frontend development, creating an intuitive and user-friendly interface for interacting with the application. These web technologies provide the necessary structure, styling, and interactivity to enhance the user experience.
+**HTML, CSS, and JavaScript**: Used for the frontend development, creating an intuitive and user-friendly interface for interacting with the application. These web technologies provide the necessary structure, styling, and interactivity to enhance the user experience.
 
-Bootstrap: Employed as a frontend framework to streamline the design and layout process. Bootstrap offers a responsive grid system and a wide range of pre-built components, allowing for faster and consistent development of the application's frontend.
+**Bootstrap**: Employed as a frontend framework to streamline the design and layout process. Bootstrap offers a responsive grid system and a wide range of pre-built components, allowing for faster and consistent development of the application's frontend.
 
-SQLite: Selected as the database management system for its lightweight nature and seamless integration with Python. SQLite efficiently stores and retrieves data, supporting the application's functionality related to user accounts, uploaded files, and other relevant information.
+**SQLite**: Selected as the database management system for its lightweight nature and seamless integration with Python. SQLite efficiently stores and retrieves data, supporting the application's functionality related to user accounts, uploaded files, and other relevant information.
