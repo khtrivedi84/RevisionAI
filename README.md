@@ -70,5 +70,3 @@ Voila! Your app must have started and you can start summarizing your lectures.
 ## Screen Recording (Demo)
 
 [<img src="https://img.youtube.com/vi/Zxm7Bf4VSi0/maxresdefault.jpg" width="50%">](https://youtu.be/Zxm7Bf4VSi0)
-
-[Video Recording](https://youtu.be/Zxm7Bf4VSi0)
