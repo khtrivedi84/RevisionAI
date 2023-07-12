@@ -186,7 +186,7 @@ def upload():
         url = "https://api.runpod.ai/v2/2v29gahx7n42uc/run"
 
         headers = CaseInsensitiveDict()
-        headers["Authorization"] = "Bearer QWFBJFTJBKNCB6SYKASNA7X1XPYZTJ2QTC24O1BE"
+        headers["Authorization"] = "Bearer <RUNPOD_API_KEY>"
         headers["Content-Type"] = "application/json"
 
         data = '{{"input": {{"public_ip": "54.186.104.197", "port": "8000", "course_name": "{0}", "user_email": "{1}", "lecture_number": "{2}", "file_name": "{3}"}}}}'.format(courseName, email, lecture_number, url_filename)
