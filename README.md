@@ -34,6 +34,8 @@ Run following commands to install required modules and packages
 ```
 Install Docker and create docker image using the Dockerfile and handler.py file provided in this repository. Push the docker image to DockerHub and use this Docker image from DockerHub to create a serverless endpoint at Runpod.io (Instructions to use runpod.io can be found in their documentation)
 
+Obtain required keys from the OpenAI, RunPod, and AI21 and replace them in the "app.py" file. Also, make sure to update the "public_ip" and "port" with your amazon ec2 instance ip or any other cloud service you might be using.
+
 ## Technologies Used
 
 OpenAI Whisper Model: Used for audio-to-text transcription, converting the class recordings into textual format for further processing.
