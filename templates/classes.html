@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>RevisionAI</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/blog/">
+    <script src="https://kit.fontawesome.com/9a2dcefa1d.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#7952b3">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      .color-strip {
+      background-color: #b30738; /* Specify your desired color here */
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 6.5%; /* Adjust the width as needed */
+      }
+      .content {
+        margin-left: 20px; /* Ensure content doesn't overlap with the color strip */
+        padding: 20px; /* Add padding to the content for spacing */
+      }
+
+      .lds-ring {
+          display: inline-block;
+          position: relative;
+          width: 80px;
+          height: 80px;
+        }
+        .lds-ring div {
+          box-sizing: border-box;
+          display: block;
+          position: absolute;
+          width: 64px;
+          height: 64px;
+          margin: 8px;
+          border: 4px solid #0b5ed7;
+          border-radius: 50%;
+          animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+          border-color:#0b5ed7 transparent transparent transparent;
+        }
+        .lds-ring div:nth-child(1) {
+          animation-delay: -0.45s;
+        }
+        .lds-ring div:nth-child(2) {
+          animation-delay: -0.3s;
+        }
+        .lds-ring div:nth-child(3) {
+          animation-delay: -0.15s;
+        }
+        @keyframes lds-ring {
+          0% {
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+    </style>
+    <style>
+      .pagination {
+        margin-top: 10px;
+      }
+      .pagination button {
+        margin-right: 5px;
+      }
+      .redcolor {
+        background-color: #b30738;
+        color: white;
+      }
+    </style>
+    <script>
+      // Function to handle pagination
+      function showPage(pageNumber) {
+        const pageSize = 3; // Number of elements per page
+        const elements = document.getElementsByClassName('row justify-content-center mb-2 mt-4');
+        const pageCount = Math.ceil(elements.length / pageSize); // Calculate the number of pages
+        
+        // Calculate the starting and ending indexes of elements to display
+        const startIndex = (pageNumber - 1) * pageSize;
+        const endIndex = startIndex + pageSize;
+  
+        // Loop through all elements and show/hide based on the page number
+        for (let i = 0; i < elements.length; i++) {
+          if (i >= startIndex && i < endIndex) {
+            elements[i].style.display = 'flex';
+          } else {
+            elements[i].style.display = 'none';
+          }
+        }
+  
+        // Update the pagination links
+        updatePagination(pageCount, pageNumber);
+      }
+  
+      // Function to update the pagination links
+      function updatePagination(pageCount, currentPage) {
+        const paginationContainer = document.getElementById('paginationContainer');
+        paginationContainer.innerHTML = ''; // Clear existing pagination links
+        
+        for (let i = 1; i <= pageCount; i++) {
+          const button = document.createElement('button');
+          button.textContent = i;
+          button.classList.add('btn');
+          button.classList.add('redcolor');
+          button.onclick = function() {
+            showPage(i);
+          };
+  
+          if (i === currentPage) {
+            button.classList.add('active');
+          }
+  
+          paginationContainer.appendChild(button);
+        }
+      }
+    </script>
+    
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="/static/css/blog.css" rel="stylesheet">
+  </head>
+  <body>
+    
+    <div class="container">
+      <header class="blog-header py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          <div class="col-6 pt-1">
+            <a class="link-secondary" style="color: palevioletred;" href="/"><strong>MY COURSES</strong></a>
+          </div>
+          <div class="col-6 text-center">
+            <a id="addacourse" href="/logout" style="float: right;" class="btn btn-warning mx-3"> Logout </a>
+
+            <a type="button" data-toggle="modal" data-target="#addCourse" style="float: right; color: white;" class="btn btn-primary"> Add Course </a>
+            
+            <a type="button" data-toggle="modal" data-target="#addlecture" style="float: right; color: white;" class="btn btn-success mx-3"> Add new lecture </a>
+          </div>
+
+          <!-- "Add a new Lecture" Modal -->
+          <div class="modal fade" id="addlecture" tabindex="-1" role="dialog" aria-labelledby="addLectureModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Add Lecture</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="row justify-content-center align-items-center">
+                    <div class="col-4" >
+                      <div class="lds-ring d-none"><div></div><div></div><div></div><div></div></div>
+                    </div>
+                  </div>
+                  {% if course %}
+                  <form  action="/upload?course={{course}}" method="post" enctype="multipart/form-data">
+                  {% endif %}
+                    <div class="form-group text-center">
+                      <h6><span style="float: left;" class="uploadRecording label label-default mb-2">Upload lecture recording</span></h6>
+                      <input required id="upload" name="file" type="file" class="uploadFile form-control-file" >
+                      <input required placeholder="Lecture number" class="lectureNumber mb-4 mt-4 form-control" id="number" name="number" type="number">
+                      <input required placeholder="Lecture Title" class="lectureTitle mb-4 mt-4 form-control" id="title" name="title" type="text">
+                      <input hidden name="course" id="course" value="{{course}}">
+                      <button class="lectureSubmit mt-4 btn btn-primary submit-lecture" id="submit" type="submit">Submit</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- "Add a Course" Modal -->
+          <div class="modal fade" id="addCourse" tabindex="-1" role="dialog" aria-labelledby="addLectureModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Add Course</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form  action="/addCourseForm" method="post" enctype="multipart/form-data">
+                    <div class="form-group text-center">
+                      <input required placeholder="Course name" class="mb-4 mt-4 form-control" id="courseName" name="courseName" type="text">
+                      <input required placeholder="More details about the course (e.g Semester/Quarter)" class="mb-4 mt-4 form-control" id="title" name="title" type="text">
+                      <button class="mt-4 btn btn-primary" id="submit" type="submit">Submit</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <div class="color-strip">
+      <!-- <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 mt-2">
+            <span><img width="42px" style="border-radius:25px" height="42px" src="logo.jpg" alt=""></span>
+          </div>
+          <hr class="mt-2" style="border-top: 5px solid white;">
+        </div>
+      </div> -->
+    </div>
+
+<main class="container">
+  <div class="row justify-content-center align-items-center mb-2 mt-4">
+    {% set length = lectures|length %}
+    {% for i in range(length) %}
+    <div class="col-md-10">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <h3 class="mb-0"></h3>
+          <div style="border-bottom: 1px solid #dee2e6;" class="mb-1"><a href="/notes?courseName={{course}}&lecture_number={{lectures[i].lecture_number}}"><b>Lecture {{lectures[i].lecture_number}}: {{lectures[i].title}}</b></a></div>
+          <p class="card-text mb-auto">{{lecture_descriptions[i]}}</p>
+          <a style="border-top: 1px solid #dee2e6; padding-top: 1%;" href="/notes?courseName={{course}}&lecture_number={{lectures[i].lecture_number}}" class="stretched-link">Click for more details<i style="padding-left: 1%;" class="fa fa-arrow-circle-right"></i></a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <!-- Pagination links -->
+  <div class="row justify-content-center mb-3 mt-3">
+    <div class="col-lg-1">
+      <div class="pagination" id="paginationContainer">
+      </div>
+    </div>
+  </div>
+  
+
+</main>
+<script>
+  // Show the first page by default
+  showPage(1);
+</script>
+
+<script>
+  var uploadRecording = document.getElementsByClassName("uploadRecording")[0];
+  var uploadFile = document.getElementsByClassName("uploadFile")[0];
+  var lectureNumber = document.getElementsByClassName("lectureNumber")[0];
+  var lectureTitle = document.getElementsByClassName("lectureTitle")[0];
+  var submitLecture = document.getElementsByClassName("lectureSubmit")[0];
+  var animation_ring = document.getElementsByClassName("lds-ring")[0];
+
+    $(document).ready(function() {
+  $(".submit-lecture").click(function() {
+    uploadRecording.classList.add("d-none");
+    uploadFile.classList.add("d-none");
+    lectureNumber.classList.add("d-none");
+    lectureTitle.classList.add("d-none");
+    submitLecture.classList.add("d-none");
+    animation_ring.classList.remove("d-none");
+  });
+});
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </body>
+</html>
