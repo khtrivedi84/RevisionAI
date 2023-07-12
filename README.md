@@ -12,6 +12,19 @@ Importance Indicators: Class Recording Summarizer automatically identifies the i
 
 Saves Time and Effort: By automating the process of summarizing class recordings and extracting crucial information, the application saves you valuable time and effort. You can quickly access the most vital details from your lectures, enabling a more focused and efficient approach to studying and review.
 
+## Getting Started
+
+### Installation
+
+To use RevisionAI, follow these steps:
+
+Clone this repository to your local machine.
+
+```bash
+  git clone https://github.com/kishan12345/RevisionAI.git
+```
+
+
 ## Technologies Used
 
 OpenAI Whisper Model: Used for audio-to-text transcription, converting the class recordings into textual format for further processing.
