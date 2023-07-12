@@ -32,6 +32,7 @@ Run following commands to install required modules and packages
   pip install moviepy
   pip install openai
 ```
+Install Docker and create docker image using the Dockerfile and handler.py file provided in this repository. Push the docker image to DockerHub and use this Docker image from DockerHub to create a serverless endpoint at Runpod.io (Instructions to use runpod.io can be found in their documentation)
 
 ## Technologies Used
 
