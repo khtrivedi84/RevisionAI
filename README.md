@@ -30,6 +30,7 @@ Run following commands to install required modules and packages
   pip install flask_sqlalchemy
   pip install flask_migrate
   pip install moviepy
+  pip install openai
 ```
 
 ## Technologies Used
