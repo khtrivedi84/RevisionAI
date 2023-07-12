@@ -2,7 +2,9 @@
 
 RevisionAI is a web application that utilizes artificial intelligence (AI) to generate topic-wise summaries and extract important information from uploaded class recordings. With this application, you can easily summarize your recorded lectures, identify key topics, and extract essential details for exams, midterms, assignments, or preparing for future lectures. 
 
-The system is optimized to deal with the issue of hallucinations that the LLMs are infamous for. It also demonstrates on how efficient prompt engineering can help utilise the power of Large Language Models and get accurate results (even with a small context window of 8k or 16k tokens). **(Screen Recording at the bottom)**
+The system is optimized to deal with the issue of hallucinations that the LLMs are infamous for. It also demonstrates on how efficient prompt engineering can help utilise the power of Large Language Models and get accurate results (even with a small context window of 8k or 16k tokens). 
+
+**(Screen Recording at the bottom)**
 
 ## Features
 
