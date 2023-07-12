@@ -2,7 +2,7 @@
 
 RevisionAI is a web application that utilizes artificial intelligence (AI) to generate topic-wise summaries and extract important information from uploaded class recordings. With this application, you can easily summarize your recorded lectures, identify key topics, and extract essential details for exams, midterms, assignments, or preparing for future lectures. **(Screen Recording at the bottom)**
 
-## Features
+### Current Features
 
 Topic-wise Summaries: The AI-powered analyzes the uploaded class recordings and generates concise summaries for each topic covered in the lecture. These summaries provide a quick overview of the main points discussed, enabling you to review the content more efficiently.
 
@@ -11,6 +11,16 @@ Keyword Extraction: The application extracts relevant keywords for each topic, h
 Importance Indicators: Class Recording Summarizer automatically identifies the importance of each topic for various academic purposes, such as exams, midterms, assignments, or preparing for future lectures. This feature assists you in prioritizing your study or preparation efforts based on the significance of each topic.
 
 Saves Time and Effort: By automating the process of summarizing class recordings and extracting crucial information, the application saves you valuable time and effort. You can quickly access the most vital details from your lectures, enabling a more focused and efficient approach to studying and review.
+
+### Upcoming Features
+
+Pinecone vector database, Retrival Search and Retrival Augmentation technique to use class materials such as Slides or reference books as a knowledge base for more accurate summaries and question answering.
+
+Integrated ChatGPT to do general question answering
+
+Integration of GPT-4 32k model for accurate results and bigger context window
+
+LangChain for text splitting and chunk creation
 
 ## Getting Started
 
@@ -62,3 +72,5 @@ Voila! Your app must have started and you can start summarizing your lectures.
 **Bootstrap**: Employed as a frontend framework to streamline the design and layout process. Bootstrap offers a responsive grid system and a wide range of pre-built components, allowing for faster and consistent development of the application's frontend.
 
 **SQLite**: Selected as the database management system for its lightweight nature and seamless integration with Python. SQLite efficiently stores and retrieves data, supporting the application's functionality related to user accounts, uploaded files, and other relevant information.
+
+
