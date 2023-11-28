@@ -70,7 +70,3 @@ Voila! Your app must have started and you can start summarizing your lectures.
 **GPT-4 32k Model Integration**: Incorporate the powerful GPT-4 32k model to enable a larger context window for analysis, leading to more accurate and detailed summaries.
 
 **LangChain for Text Splitting and Chunk Creation**: Utilize LangChain to effectively split text into manageable chunks, improving the precision of analysis and generating higher-quality summaries and question answering results.
-
-## Screen Recording (Demo)
-
-[<img src="https://img.youtube.com/vi/Zxm7Bf4VSi0/maxresdefault.jpg" width="50%">](https://youtu.be/Zxm7Bf4VSi0)
