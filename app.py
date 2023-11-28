@@ -10,6 +10,7 @@ import json
 import time
 import openai
 
+#Initializing Flask app
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '<SECRET_KEY>'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
