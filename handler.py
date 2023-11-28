@@ -14,7 +14,7 @@ from whisperx.diarize import DiarizationPipeline, assign_word_speakers
 import gc
 import json
 import pandas as pd
-import requests
+import requests 
 
 def handler(job):
 
