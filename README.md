@@ -72,5 +72,5 @@ Voila! Your app must have started and you can start summarizing your lectures.
 **LangChain for Text Splitting and Chunk Creation**: Utilize LangChain to effectively split text into manageable chunks, improving the precision of analysis and generating higher-quality summaries and question answering results.
 
 ## Screen Recording
-[![Watch the video](https://imgur.com/dSppuS3)](https://www.youtube.com/watch?v=LxE-HPmYEWg)
+[![Watch the video](https://i.imgur.com/dSppuS3.png)](https://www.youtube.com/watch?v=LxE-HPmYEWg)
 
